@@ -10,8 +10,14 @@ header {
    
 }
 
+div.wrapper {
+   border-radius: 2em;
+   max-width: 100%;
+}
+
 nav {
    display: flex;
+   flex-direction: column;
    justify-content: center;
    background-color: black;
    text-align: center;
@@ -63,20 +69,24 @@ p {
    text-align: center;
    font-size: 120%;
    padding: 4%;
-   background-color: #a89d32;
-
+   background-color: #c3c0a4;
+   border-radius: 2rem;
 }
 
 img {
    max-width: 100%;
    min-width: 100%;
-  
+  border-radius: 2rem;
    
 }
+
+
 
 h2 {
    text-align: center;
    background-color: #a89d32;
+   border-radius: 2rem;
+   padding: 20px;
 }
 
 footer {
@@ -93,16 +103,9 @@ section.imagewrap {
    background-repeat: none;
    background-size: cover;
    gap: 1em;
-   
 }
 
-section.gt {
-   grid-row: 
-}
 
-section.gt {
-   grid-row: ;
-}
 
 section.events {
    display: flex;
@@ -110,6 +113,7 @@ section.events {
    max-width: 50%;
    max-height: 10%;
    padding-bottom: 1rem;
+   margin-top: 3rem
 }
 
 section.games {
@@ -157,4 +161,45 @@ section.gift {
    
 }
 
-section.merch
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 780px) {
+
+  
+
+   nav {
+      
+      
+   }
+
+   li a {
+      
+      
+   }
+
+   ul {
+      flex-direction: column;
+      line-height: 40px;
+   }
+
+   section.gameswrapper {
+
+   }
+
+   img {
+
+   }
+
+   
+   
+
+
+ }
