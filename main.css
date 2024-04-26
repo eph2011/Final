@@ -8,11 +8,13 @@ header {
    font-size: 170%;
    color: white;
    
+   
 }
 
 div.wrapper {
    border-radius: 2em;
    max-width: 100%;
+   
 }
 
 nav {
@@ -20,7 +22,7 @@ nav {
    flex-direction: column;
    justify-content: center;
    background-color: black;
-   text-align: center;
+   text-align: 50vw;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-size: 140%;
    text-decoration: none;
@@ -32,9 +34,8 @@ nav {
 li a {
    text-decoration: none;
    justify-content: center;
-   align-items: center;
    text-align: center;
-   margin-right: 7em;
+   margin: 10vw;
    color: beige;
    transition: all .40s ease;
    l
@@ -51,16 +52,23 @@ ul {
    display: flex;
    text-decoration: none;
    list-style-type: none;
-   margin-left: 8rem;
+   margin-left: center;
+}
+
+section.box {
+   margin-left: 10rem;
+   margin-right: 10rem;
 }
 
 body {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 100%;
+   height: 50%;
+   background-color: #edebd9;
 }
 
 h2 {
-   font-size: 250%;
+   font-size: 150%;
 }
 
 
@@ -76,7 +84,7 @@ p {
 img {
    max-width: 100%;
    min-width: 100%;
-  border-radius: 2rem;
+  border-radius: 1rem;
    
 }
 
@@ -96,13 +104,23 @@ footer {
    font-size: 40%;
 }
 
+#table1 {
+   grid-column: span;
+
+}
+
 section.imagewrap {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   background-image: url(images/oldguy.jpg);
+   grid-template-columns: .56fr 1fr;
    background-repeat: none;
    background-size: cover;
-   gap: 1em;
+   gap: .25em;
+}
+
+
+
+section.tog {
+   grid-row: 2/2;
 }
 
 
@@ -113,7 +131,8 @@ section.events {
    max-width: 50%;
    max-height: 10%;
    padding-bottom: 1rem;
-   margin-top: 3rem
+   margin-top: 3rem;
+   gap: .25em;
 }
 
 section.games {
@@ -137,6 +156,7 @@ section.gameswrap {
 section.tables {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   gap: .25em;
 }
 
 section.browse {
@@ -164,14 +184,28 @@ section.gift {
 
 
 
+<html><body class="entire-webpage"></body></html>
+
+
+
+.entire-webpage {
+        zoom: .5;
+        -moz-transform: scale(.5);/* Firefox Property */
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(.5);/* Opera Property */
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(.5);/* Safari Property */
+        -webkit-transform-origin: 0 0;
+        transform: scale(.5); /* Standard Property */
+        transform-origin: 0 0;  /* Standard Property */
+    }
 
 
 
 
 
 
-
- @media screen and (max-width: 780px) {
+ @media screen and (max-width: 480px) {
 
   
 
@@ -181,25 +215,34 @@ section.gift {
    }
 
    li a {
-      
+      grid-template-columns: 1fr;
+      transition: none;
+      margin-right: 7rem;
+      margin-left: 7rem;
+      text-align: center;
       
    }
 
    ul {
       flex-direction: column;
       line-height: 40px;
+      width: 200px;
+      padding-top: ;
    }
 
-   section.gameswrapper {
-
+   section.events {
+      margin-top: 1rem;
    }
-
-   img {
-
-   }
-
    
+   section.tables {
+      grid-template-columns: 1fr;
+
+   }
    
+   section.box {
+      margin-left: 1rem;
+      margin-right: 1rem;
+   }
 
 
  }
